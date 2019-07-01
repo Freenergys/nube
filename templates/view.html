@@ -1,0 +1,57 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CloudSite</title>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="/static/stylos/css/stylosi.css">
+
+</head>
+
+<body>
+
+
+    
+    <h1 class="display-1">CloudSite</h1>
+
+    <br> <br>
+
+
+
+
+
+
+
+    {% set download_url = obj.download_url() %}
+
+
+
+
+    <div class="card" style="width: 20rem;">
+        <img src="{{ obj.url }}" class="card-img-top" alt="..." style="height: 180px;">
+        <div class="card-body">
+            <h5 class="Icon-sm mdi mdi-database ">Nombre:{{ obj.name }}</h5>
+            <h5><p class="icon-lg card-text mdi mdi-database">Tamaño:{{ obj.size}} bytes</p></h5>
+            <p><a href="{{ obj.url }}" class="mdi mdi-eye btn-icon-prepend icon-lg btn btn-secondary btn-rounded btn-fw">Abrir Archivo &raquo;</a></p>
+            <p><a href="{{ download_url }}" class="mdi mdi-download btn-icon-prepend icon-lg btn btn-secondary btn-rounded btn-fw">Descargar &raquo;</a></p>
+
+
+
+            
+                
+            
+        </div>
+    </div>
+
+
+    <script src="/static/javascript/bootstrap.bundle.js"></script>
+    <script src="/static/javascript/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
+
+{% endblock %}

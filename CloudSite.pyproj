@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>138fba6c-8ae1-43dc-a547-95b32f9f9303</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>CloudSite</Name>
+    <RootNamespace>CloudSite</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CloudSite\" />
+    <Folder Include="data\" />
+    <Folder Include="static\" />
+    <Folder Include="static\content\" />
+    <Folder Include="static\fonts\" />
+    <Folder Include="static\bootstrap\" />
+    <Folder Include="static\javascript\" />
+    <Folder Include="static\stylos\" />
+    <Folder Include="static\scripts\" />
+    <Folder Include="static\stylos\base\" />
+    <Folder Include="static\stylos\chart.js\" />
+    <Folder Include="static\stylos\datatables.net\" />
+    <Folder Include="static\stylos\datatables.net-bs4\" />
+    <Folder Include="static\stylos\mdi\" />
+    <Folder Include="static\stylos\mdi\css\" />
+    <Folder Include="static\stylos\mdi\fonts\" />
+    <Folder Include="static\stylos\css\" />
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="static\bootstrap\bootstrap-grid.css" />
+    <Content Include="static\bootstrap\bootstrap-grid.css.map" />
+    <Content Include="static\bootstrap\bootstrap-grid.min.css" />
+    <Content Include="static\bootstrap\bootstrap-grid.min.css.map" />
+    <Content Include="static\bootstrap\bootstrap-reboot.css" />
+    <Content Include="static\bootstrap\bootstrap-reboot.css.map" />
+    <Content Include="static\bootstrap\bootstrap-reboot.min.css" />
+    <Content Include="static\bootstrap\bootstrap-reboot.min.css.map" />
+    <Content Include="static\bootstrap\bootstrap.css" />
+    <Content Include="static\bootstrap\bootstrap.css.map" />
+    <Content Include="static\bootstrap\bootstrap.min.css" />
+    <Content Include="static\bootstrap\bootstrap.min.css.map" />
+    <Content Include="static\content\bootstrap.css" />
+    <Content Include="static\content\bootstrap.min.css" />
+    <Content Include="static\content\site.css" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\javascript\bootstrap.bundle.js" />
+    <Content Include="static\javascript\bootstrap.bundle.js.map" />
+    <Content Include="static\javascript\bootstrap.bundle.min.js" />
+    <Content Include="static\javascript\bootstrap.bundle.min.js.map" />
+    <Content Include="static\javascript\bootstrap.js" />
+    <Content Include="static\javascript\bootstrap.js.map" />
+    <Content Include="static\javascript\bootstrap.min.js" />
+    <Content Include="static\javascript\bootstrap.min.js.map" />
+    <Content Include="static\scripts\bootstrap.js" />
+    <Content Include="static\scripts\bootstrap.min.js" />
+    <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="static\scripts\jquery-1.10.2.js" />
+    <Content Include="static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="static\scripts\jquery.validate.js" />
+    <Content Include="static\scripts\jquery.validate.min.js" />
+    <Content Include="static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="static\scripts\modernizr-2.6.2.js" />
+    <Content Include="static\scripts\respond.js" />
+    <Content Include="static\scripts\respond.min.js" />
+    <Content Include="static\scripts\_references.js" />
+    <Content Include="static\stylos\css\stylosi.css" />
+    <Content Include="static\stylos\mdi\css\materialdesignicons.min.css" />
+    <Content Include="static\stylos\mdi\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="static\stylos\mdi\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="static\stylos\mdi\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="static\stylos\mdi\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="static\stylos\mdi\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="templates\about.html" />
+    <Content Include="templates\CloudST.html" />
+    <Content Include="templates\contact.html" />
+    <Content Include="templates\index.html" />
+    <Content Include="templates\layout.html" />
+    <Content Include="templates\view.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

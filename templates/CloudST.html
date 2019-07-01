@@ -1,0 +1,105 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CloudSite</title>
+    <link rel="stylesheet" href="/static/stylos/css/stylosi.css">
+</head>
+<body>
+
+    <h1>CloudSite</h1> 
+    <br />
+
+
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+   
+        
+        
+        <div class="custom-file">
+            <input type="file" name="file" class="custom-file-input" id="fileToUpload" lang="es">
+            <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+        </div> 
+        <br />
+        
+        <button type="submit" class="btn btn-outline-danger btn-icon-text"> 
+            <i class="mdi mdi-upload btn-icon-prepend"></i>
+            Upload
+        </button>
+
+    </form>
+
+    <hr>
+
+
+
+
+
+    <div class="card-body">
+        <h4 class="card-title">Lista de archivos disponibles en el almacenamiento:</h4>
+        <p class="card-description">
+            
+        </p>
+        <div class="table-responsive">
+            <table class="table table-striped">
+
+                
+                
+
+                    <tr>
+                        <th>
+                            Archivos
+                        </th>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Tamaño
+                        </th>
+                        <th>
+                            Bytes
+                        </th>
+                        <th>
+                            Fecha
+                        </th>
+                    </tr>
+                
+                {% for obj in storage %}
+
+
+
+
+                
+                    <tr>
+                        <td class="py-1">
+                            <a type="file" href="{{ url_for('view', object_name=obj.name) }}"><img src="{{ obj.url }}" style="width: 60px; height: 60px;"></a>
+                        </td>
+                        <td><h4>{{ obj.name }}</h4></td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: {{ obj.size }}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td>
+                            {{ obj.size }}
+                        </td>
+                        <td>
+                            May 15, 2015
+                        </td>
+                       
+               
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+{% endfor %}
+{% endblock %}
